@@ -4,21 +4,10 @@
 % Version 1.0 (11/28/2021)
 %
 % Author:
-% Shubham Mazumder (http://mazumder.me)
-%
-% Hacked together from:
-% https://github.com/deedydas/Deedy-Resume
 %
 % IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
 %
-% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add more icon options 
-% 4. Fix hacky left alignment on contact line
-% 5. Remove Hacky fix for awkward extra vertical space
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -45,9 +34,12 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.home.me}{homepage.com}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/}{li-username}}{\href{mailto:first.last@mail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+\namesection{Muhammad}{Abbas}{Student at Habib University}{\thinspace Full-Stack Application Developer [Flutter|Firebase]}
 
-% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+{\contactline{\href{mailto:abbastaqvi81@gmail.com}{abbastaqvi81@gmail.com}}{\href{https://www.github.com/smabbasht}{smabbasht}}{\href{https://www.linkedin.com/in/abbastaqvi//}{li-abbastaqvi}}{\href{tel:923085685919}{923085685919}}}
+
+% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -58,13 +50,38 @@
 \begin{minipage}[t]{0.70\textwidth} 
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Chess Engine}
+\descript{| C++}
+\location{2018}
+\begin{tightemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper.
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Speech-enabled Chatbot}
+\descript{| C\#, Microsoft Bot Framework}
+\location{2018}
+\begin{tightemize}
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper. 
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
+\end{tightemize}
+\sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Weyland Yutani Industries}
-\descript{| Program Manager}
+\runsubsection{Office of Institutional Research at Habib University} \\
+\descript{Data Intern}
 \location{May 2021 – Current | Tokyo, Japan}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
@@ -96,31 +113,6 @@
 \end{tightemize}
 \sectionsep
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Projects
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Projects}
-
-\runsubsection{Chess Engine}
-\descript{| C++}
-\location{2018}
-\begin{tightemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper.
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Speech-enabled Chatbot}
-\descript{| C\#, Microsoft Bot Framework}
-\location{2018}
-\begin{tightemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper. 
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
-\end{tightemize}
-\sectionsep
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,6 +125,8 @@
 % \\
 % \end{tabular}
 % \sectionsep
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN TWO
@@ -196,7 +190,7 @@ School of Computing \\
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{References} 
-\href{https://www.linkedin.com/company/john-doe/}{\textbf{John Doe}, Senior Software Developer, Tyrell Corp}
+\href{https://www.linkedin.com/company/john-doe/}{\textbf{Dr. Saleha Raza}, Associate Professor at Habib University}
 \begingroup
 \setbox0=\hbox{
 \includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} john.doe@email.com
