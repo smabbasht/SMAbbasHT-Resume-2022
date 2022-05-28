@@ -172,6 +172,8 @@ Last Updated on \today
 
 \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
 \vspace{-15pt}
+\noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
+\vspace{-15pt}
 
 \RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{14pt}{14pt}\selectfont #3}
 
@@ -211,13 +213,12 @@ Last Updated on \today
 \color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{12pt}\selectfont {#1\\} \normalfont}
 
 %Contact Line
-\newcommand{\contactline}[5]{\begingroup
+\newcommand{\contactline}[4]{\begingroup
 \setbox0=\hbox{
-\includegraphics[scale=0.23,trim={1.4cm 1.25cm -0.4cm 0cm}]{icons/main/home.png}{#1}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#4}\hspace{0.3cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#5}
+\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#4}\hspace{1.4cm}
+\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{1.4cm}
+\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}\hspace{1.4cm}
+\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#1}
 }\parbox{\wd0}{\box0}\endgroup}
 
 %Inline Centered Logo
