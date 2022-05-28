@@ -37,7 +37,7 @@
 \def \firstnamefont {sourcesanspro-SemiBold}
 \def \secondnamefont {sourcesanspro-light}
 \def \titlefont {\firstnamefont}
-\def \namefontsize {9.5}
+\def \namefontsize {6}
 
 %% Office Code Pro D Title:
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,7 +125,7 @@
 %Used for company name and sub-skills
 \def \pathsubheadingfont {\pathtitlefont}
 \def \subheadingfont {\titlefont}
-\def \subheadingsize {12}
+\def \subheadingsize {11}
 
 %Main Job Descriptor and Location Font Definitions
 %Used for company name and sub-skills
@@ -165,10 +165,10 @@ Last Updated on \today
 \newcommand{\namesection}[4]{
 \RaggedRight{
 \color{title}
-\fontsize{50pt}{60pt}
+\fontsize{40pt}{45pt}
 \fontspec[Path = \pathtitlefont]{\firstnamefont}\selectfont #1 
 \fontspec[Path = \pathtitlefont]{\secondnamefont}\selectfont #2
-} \\[5pt]
+} \\[3pt]
 
 \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
 \vspace{-15pt}
@@ -194,7 +194,7 @@ Last Updated on \today
 
 % Headings command
 \titleformat{\section}{\color{title}
-\scshape\fontspec[Path = \pathtitlefont]{\titlefont}\fontsize{16pt}{24pt}\selectfont \raggedright}{}{0em}{}
+\scshape\fontspec[Path = \pathtitlefont]{\titlefont}\fontsize{13pt}{20pt}\selectfont \raggedright}{}{0em}{}
 
 % Subheadings command
 \titleformat{\subsection}{
@@ -215,10 +215,10 @@ Last Updated on \today
 %Contact Line
 \newcommand{\contactline}[4]{\begingroup
 \setbox0=\hbox{
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#4}\hspace{1.4cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{1.4cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}\hspace{1.4cm}
-\includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#1}
+  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#1}\hspace{1.15cm}
+  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{1.2cm}
+  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#4}\hspace{1.2cm}
+  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}
 }\parbox{\wd0}{\box0}\endgroup}
 
 %Inline Centered Logo
