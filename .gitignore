@@ -1,8 +1,9 @@
-M Abbas Resume' 2022.aux
-M Abbas Resume' 2022.fls
-M Abbas Resume' 2022.out
-M Abbas Resume' 2022.xdv
-M Abbas Resume' 2022.synctex
-M Abbas Resume' 2022.fdb_latexmk
-M Abbas Resume' 2022.log
-M Abbas Resume' 2022.synctex.gz
+*.aux
+*.fls
+*.out
+*.xdv
+*.synctex
+*.fdb_latexmk
+*.log
+*.synctex.gz
+*.vscode
