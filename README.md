@@ -1,4 +1,4 @@
-This repository contains my Resume' 2022\
+This repository contains my Resume' 2023\
 This is basically a forked version of popular Resume template PlushCV.
 
 A PNG version of the Resume is attached below: 
