@@ -24,9 +24,35 @@
 
 \documentclass[]{m abbas resume' 2022}
 \usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
 \pagestyle{fancy}
 \fancyhf{}
 \begin{document}
+
+% \newcommand{\ExternalLink}{%
+%     \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+%         \begin{scope}[x=1ex, y=1ex]
+%             \clip (-0.1,-0.1) 
+%                 --++ (-0, 1.2) 
+%                 --++ (0.6, 0) 
+%                 --++ (0, -0.6) 
+%                 --++ (0.6, 0) 
+%                 --++ (0, -1);
+%             \path[draw, 
+%                 line width = 0.5, 
+%                 rounded corners=0.5] 
+%                 (0,0) rectangle (1,1);
+%         \end{scope}
+%         \path[draw, line width = 0.5] (0.5, 0.5) 
+%             -- (1, 1);
+%         \path[draw, line width = 0.5] (0.6, 1) 
+%             -- (1, 1) -- (1, 0.6);
+%         }
+%     }
+%
+% \let\orighref\href
+% \renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -34,7 +60,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{Muhammad}{Abbas}{\thinspace CS Junior at Habib University}{\thinspace Competitve Programming Enthusiast \& Flutter Application Developer}
+\namesection{Muhammad}{Abbas}{\thinspace Rising Computer Science Senior at Habib University}{\thinspace Python Programmer \& Flutter Application Developer}
 
 {\contactline{\href{mailto:abbastaqvi81@gmail.com}{abbastaqvi81@gmail.com}}{\href{https://www.github.com/smabbasht}{smabbasht}}{\href{https://www.linkedin.com/in/abbastaqvi//}{li-abbastaqvi}}{\href{tel:923085685919}{923085685919}}}
 
@@ -47,31 +73,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.59\textwidth} 
+\begin{minipage}[t]{0.53\textwidth} 
     
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%+%%%%%%%%%%%%%%%
-    
-\section{Experience}
-\runsubsection{Office of Institutional Research at Habib University}
-\descript{Data Intern}
-\location{Aug 2021 – Sep 2021 | Karachi, Pak}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\sectionsep
-\item Worked on Data Collection, Cleaning, Manipulation and Organization from confidential PDF files using NumPy, Pandas and Excel.
-\item It was a two-month summer internship programme which entailed meeting with Dean and Program Directors, Data Collection, Cleaning, Manipulation and Organization, the model was later presented before the University President.
-\end{tightemize}  
-  
-\runsubsection{Edlab Pakistan}
-\descript{Data Intern}
-\location{Sep 2021 – Oct 2021 | Karachi, Pak}
-\begin{tightemize}
-\sectionsep
-\item Learned Data Analysis using Power Bi and Excel. 
-\item Worked on Urban and Rural Educational Data Models.
-\end{tightemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -81,11 +84,16 @@
 \runsubsection{Habib University} \descript{Bachelor's of Science in Computer Science}
 \location{Aug 2020 - Jul 2024 | Karachi, Pak}
     Related Courses Taken:
+    \vspace{0.23cm}
     \begin{tightemize}
+        \item Algorithm Design \& Analysis
         \item Data Structures and Algorithms
         \item Data Structures II
         \item OOP Design \& Methodologies (C++)
+        \item Software Engineering
         \item Artificial Intelligence
+        \item GPU Accelerated Computing
+        \item Natural Language Processing
         \item Operating Systems
         \item Discrete Mathematics
         \item Computer Architecture (Verilog \& RISC-V)
@@ -104,9 +112,16 @@
         \item Data Cleaning with Python
         \item Visualization with Matplotlib
     \end{tightemize}
-    Udemy:
+    NVIDIA Deep Learning Institute:
     \begin{tightemize}
-        \item The Complete 2021 Flutter Development Bootcamp with Dart
+        \item Fundamentals of Accelerated Computing with CUDA C/C++
+        \item Getting Started with Deep Learning
+    \end{tightemize}
+    Frontend Masters:
+    \begin{tightemize}
+        \item Cross-Platform Mobile Apps with Flutter
+        \item Firebase Fundamentals
+        \item Developer Productivity
     \end{tightemize}
     GreatLearning:
     \begin{tightemize}
@@ -120,7 +135,7 @@
     \begin{tightemize}
         \item Object-Oriented Programming in Python
         % \item FPGA Design for Embedded Systems
-        \item Hardware Description Languages for FPGA Design
+        % \item Hardware Description Languages for FPGA Design
     \end{tightemize}
     \sectionsep
     
@@ -138,6 +153,21 @@
     %     \item Declared the Valedictorian for the Batch'2018
     % \end{tightemize}
     
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{App Development}
+Cross-Platform App Development with Flutter and Firebase,
+
+\subsection{Programming Languages}
+Python (Proficient), 
+C/C++ (Proficient), \\
+Rust (Basic),
+JavaScript (Basic),\\ 
+Dart (Proficient), 
 
 \subsection{Tools \& Softwares}
 % \textbf{\& Softwares} \\
@@ -167,60 +197,67 @@ Wordpress(Proficient) \\
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.39\textwidth} 
+\begin{minipage}[t]{0.45\textwidth} 
     
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%+%%%%%%%%%%%%%%%
+    
+\section{Experience}
+\runsubsection{Data Intern at Office of Institutional Research}
+\descript{Habib University}
+\location{Aug 2021 – Sep 2021 | Karachi, Pak}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Worked on Data Collection, Cleaning, Manipulation and Organization using
+    NumPy, Pandas and Excel.
+% \item It was a two-month summer internship programme which entailed meeting with Dean and Program Directors, Data Collection, Cleaning, Manipulation and Organization, the model was later presented before the University President.
+\end{tightemize}  
+  
 
-\section{Skills}
-\subsection{App Development}
-Cross-Platform App Development with Flutter and Firebase,
+\runsubsection{Github Workshop Facilitator}
+\descript{Habib University}
+\location{Mar 2023 – Mar 2021 | Karachi, Pak}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Conducted two workshops on Git and Github and taught students advanced
+    concepts like Rebasing, Branching, Resolving Merge Issues etc.
+\end{tightemize}  
 
-\subsection{Programming Languages}
-Python (Expert), 
-C/C++ (Proficient), \\
-Rust (Basic),
-JavaScript (Proficient),\\ 
-Dart (Proficient), 
-
-
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% % %     COMPETITIONS
-% % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Competitive Programming} 
-I have been doing Competitive Programming for more than two years. \\ 
-\subsection{\href{https://leetcode.com/smabbasht/}{\textbf{LeetCode - Profile}}}
-\subsection{\href{https://codeforces.com/profile/smabbasht}{\textbf{Codeforces - Profile}}}
-\textbf{ICPC Asia Regionals 2023}\\
-We have qualified for the Regional round which is to take place in Feb '23. \\ 
-\textbf{ICPC Asia Regionals 2022}\\
-Secured 19th position, solved 4 questions. \\ 
-\textbf{Google KickStart May 2022}\\
-Secured 6th position all over Pakistan, solved 2 questions.\\ 
-\textbf{Google Code Jam 2022}\\
-Qualified for Round 1, (couldn't attend due to finals) \\ 
-
+\runsubsection{Teaching Assistant for Data Structures and Algorithms}
+\descript{Habib University}
+\location{Jan 2023 – May 2023 | Karachi, Pak}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Mentored students in the course and helped them
+    with labs and assignments.
+\end{tightemize}  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %              Portfolio              %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Portfolio}
-    (Hyperlinks attached)\\
+\section{Portfolio} 
+    (Hyperlinks attached)
 
-    \subsection{\href{https://github.com/smabbasht/CS224-OOP-FruitNinjaGame-cpp}{\textbf{Fruit Ninja Game (C++ - OOP)}}}% - OOP
-    The Game was presented as Final Project of OOP and entails its all four pillars.
+    \subsection{\href{https://github.com/smabbasht/CNN-Based-Animal-Detector}{\textbf{CNN Based Animal Detection Model (py)}}}% - OOP
+    A CNN based model which detects animals in images and classifies them into 6 categories.
 
-    \subsection{\href{https://github.com/smabbasht/CS201-DataSructures-II-Project-eertree}{\textbf{Eertree Visualizer (py - Data Strctures II)}}}% - DataStructures II
-    A Visualizer which constructs and displays Eertree(A Palindromic Data Structure) for any palindrome.
+    \subsection{\href{https://github.com/smabbasht/Fruit-Ninja-Desktop-Game}{\textbf{Fruit Ninja Game (C++)}}}% - OOP
+    A remake of the popular Fruit Ninja Game using C++ and SDL Library.
 
-    \subsection{\href{https://github.com/smabbasht/HU-DSA-Project}{\textbf{Car Rental System (py - DS \& Algo)}}}% - Data Structures \& Algo
+    \subsection{\href{https://github.com/smabbasht/Eertree-Visualizer}{\textbf{Eertree Visualizer (py)}}}% - DataStructures II
+    A Visualizer which constructs and displays Eertree (A Palindromic Data Structure) for any palindrome.
+
+    \subsection{\href{https://github.com/smabbasht/Car-Rental-System}{\textbf{Car Rental System (py)}}}% - Data Structures \& Algo
     A Car rental System with Complete Admin and User Panels.
 
-    \subsection{\href{https://github.com/smabbasht/CS370-DIgital-Logic-Design-Project}{\textbf{T-Rex Game (verilog - Digital LD)}}}% - Digital Logic Design
+    \subsection{\href{https://github.com/smabbasht/SDL-Minigames-and-Simulations}{\textbf{SDL Minigames and Simulations (C++)}}}% - Data Structures \& Algo
+    A collection of Minigames and Simulations made using SDL Library.
+
+    \subsection{\href{https://github.com/smabbasht/Physiotherapic-Trex-Game}{\textbf{Physiotherapic Trex Game (Verilog)}}}% - Digital Logic Design
     A Game for physiopatients to keep them motivated during exercise.
     
     % \subsection{\href{https://github.com/smabbasht/CS330-ResearchProject-ComputerArchitecture}{CNN Based Specialized Processor Design (verilog - in progress)}}
@@ -241,11 +278,16 @@ Qualified for Round 1, (couldn't attend due to finals) \\
     
     % \subsection{\href{https://github.com/smabbasht/clima-weather-app}{\textbf{Clima Weather App}}}
     % A Live weather app which gives weather data in the current location as well as for any city.
-    \subsection{\href{https://github.com/smabbasht/Infaaq_app}{\textbf{Infaaq Platform (Khidmat)}}}
-    An App that provides a platform for NGOs to post their cases \& the donors can deposit the amount in the receivers account directly.
     
-    \subsection{\href{https://github.com/smabbasht/bmi-calculator-app}{\textbf{BMI Calculator App}}}
-    A Multi-screen app with functionality of Body-Mass Index Calculator
+    \subsection{\href{https://github.com/smabbasht/yohsin-workplace}{\textbf{Yohsin Workplace}}}
+    An App to provide a platform for freelancers and employers to connect and work together.
+
+    \subsection{\href{https://github.com/smabbasht/Infaaq_app}{\textbf{Infaaq Platform (Khidmat)}}}
+    An platform for NGOs to post their cases \& the donors can deposit the amount in the receivers account directly.
+    % An App that provides a platform for NGOs to post their cases \& the donors can deposit the amount in the receivers account directly.
+    
+    % \subsection{\href{https://github.com/smabbasht/bmi-calculator-app}{\textbf{BMI Calculator App}}}
+    % A Multi-screen app with functionality of Body-Mass Index Calculator
     
     % \subsection{\href{https://github.com/smabbasht/quizzler-app}{\textbf{Quizzler App}}}
     % A Quiz app with clean UI, keeps and displays the track of your live score.   
@@ -253,8 +295,8 @@ Qualified for Round 1, (couldn't attend due to finals) \\
     % \subsection{\href{https://github.com/smabbasht/xylophone-app}{\textbf{Xylophone App}}}
     % A Music app that plays Xylophone sounds for every Beethoven out there.
     
-    \subsection{\href{https://github.com/smabbasht/Waseela-Welfare}{\textbf{Waseela Welfare (In Progress)}}}
-    An App to manage trust operations. % with functionality of admin, trustee and donor panels.
+    % \subsection{\href{https://github.com/smabbasht/Waseela-Welfare}{\textbf{Waseela Welfare (In Progress)}}}
+    % An App to manage trust operations. % with functionality of admin, trustee and donor panels.
     
     
  
@@ -268,6 +310,24 @@ Qualified for Round 1, (couldn't attend due to finals) \\
 % Secured 19th position, solved 4 questions. \\ 
 % \textbf{Google KickStart May 2022}\\
 % Secured 6th position all over Pakistan,\\ solved 2 questions.\\ 
+% \textbf{Google Code Jam 2022}\\
+% Qualified for Round 1, (couldn't attend due to finals) \\ 
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     COMPETITIONS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Competitive Programming} 
+% I have been doing Competitive Programming for more than two years. \\ 
+% \subsection{\href{https://leetcode.com/smabbasht/}{\textbf{LeetCode - Profile}}}
+% \subsection{\href{https://codeforces.com/profile/smabbasht}{\textbf{Codeforces - Profile}}}
+% \textbf{ICPC Asia Regionals 2023}\\
+% We have qualified for the Regional round which is to take place in Feb '23. \\ 
+\textbf{ICPC Asia Regionals 2022}\\
+Secured 19th position, solved 4 questions. \\ 
+\textbf{Google KickStart May 2022}\\
+Secured 6th position all over Pakistan% , solved 2 questions.\\ 
 % \textbf{Google Code Jam 2022}\\
 % Qualified for Round 1, (couldn't attend due to finals) \\ 
 
